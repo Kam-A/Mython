@@ -106,34 +106,6 @@ bool Lexer::UpdateCurrentTokenByIndent() {
 }
 
 token_type::String MakeStringToken(string_view& cursor) {
-//    char delim = cursor[0];
-//    cursor.remove_prefix(1);
-//    string value;
-//    for (const char c : string(cursor)) {
-//        if (c == '\\') {
-//
-//        }
-//        cout << c << endl;
-//    }
-//    for (int i = 0; i < cursor.size();++i) {
-//        if (cursor[i] == delim && cursor[i - 1] != '\\') {
-//            value = string(cursor.substr(0, i));
-//            cursor.remove_prefix(i + 1);
-//            break;
-//        }
-//    }
-//
-////    while(true) {
-////        end_string_pos = cursor.find(delim);
-////        if (cursor[end_string_pos - 1] != mirror) {
-////            value += string(cursor.substr(0, end_string_pos));
-////            break;
-////        }
-////        value += string(cursor.substr(0, end_string_pos));
-////        cursor.remove_prefix(end_string_pos);
-////    }
-//    cout << value << endl;
-//    return {value};
     char delim = cursor[0];
     cursor.remove_prefix(1);
     std::string s;
